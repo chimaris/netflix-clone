@@ -1,0 +1,278 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-weight: bold;
+	background: black;
+	font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+	color: white;
+}
+
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+p {
+	margin: 0.5rem 0;
+	font-weight: 0;
+}
+img {
+	width: 100%;
+}
+/* .netflix-logo-width {
+	width: 10%;
+} */
+.header {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background: url("./img/header-image.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: 0.7;
+}
+/* .header::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.4);
+	box-shadow: 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+} */
+.navbar {
+	position: relative;
+	z-index: 2;
+	height: 90px;
+}
+.navbar img {
+	width: 140px;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translate(40%, -50%);
+}
+.navbar a {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translate(-60%, -50%);
+}
+
+.showcase-header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+}
+
+.showcase-header h1 {
+	font-weight: 700;
+	font-size: 64px;
+	margin: 0 30px;
+	max-width: 800px;
+	line-height: 74.5px;
+}
+.showcase-header h3 {
+	font-size: 25px;
+	margin: 16px 0;
+}
+.showcase-header p {
+	font-size: 19px;
+	font-weight: 300;
+	padding-top: 0.5rem;
+	padding-bottom: 1rem;
+}
+.showcase-header input {
+	width: 454px;
+	font-size: 1rem;
+	padding: 1rem 0.5rem;
+}
+.btn {
+	display: inline-block;
+	background: #e50914;
+	color: white;
+	padding: 0.5rem 1.2rem;
+	font-size: 1rem;
+	text-align: center;
+	border: none;
+	cursor: pointer;
+	border-radius: 2px;
+	margin-right: 0.5rem;
+	outline: none;
+	box-shadow: 0 5px 3px rgba(0, 0, 0, 0.45);
+}
+
+.btn-rounded {
+	border-radius: 5px;
+}
+
+.mail {
+	display: flex;
+	margin-bottom: 8em;
+}
+
+/* .showcase-content .btn-lg {
+	right: 0;
+	bottom: -8vh;
+	padding: 0.5rem 1.2rem;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	height: 36px;
+	width: 14rem;
+} */
+.card-0,
+.card-1,
+.card-2,
+.card-3 {
+	border-top: 8px rgba(69, 69, 69) solid;
+	padding: 50px;
+}
+.card-0 {
+	/* position: relative; */
+	display: grid;
+	grid-template-columns: 40% 50%;
+	text-align: left;
+	align-items: center;
+	padding: 25px 45px 50px;
+}
+.desc-0 {
+	padding-left: 100px;
+}
+.card-1 {
+	position: relative;
+	display: grid;
+	grid-template-columns: 50% 40%;
+	text-align: left;
+	align-items: center;
+	padding: 25px 45px 50px;
+}
+.desc-1 {
+	padding-left: 80px;
+}
+.sections h1 {
+	font-size: 3rem;
+	padding: 1rem;
+	padding-left: 0;
+}
+.sections h3 {
+	font-size: 1.6rem;
+	line-height: 2rem;
+}
+.card-1 video {
+	position: relative;
+	width: 100%;
+	height: 54%;
+	grid-column: 2/2;
+	grid-row: 1/2;
+	z-index: -1;
+}
+.card-1 img {
+	grid-column: 2/2;
+	grid-row: 1/2;
+}
+.card-2 {
+	position: relative;
+	display: grid;
+	grid-template-columns: 40% 50%;
+	text-align: left;
+	align-items: center;
+	padding: 25px 45px 50px;
+}
+.desc-2 {
+	padding-left: 100px;
+}
+.card-3 {
+	position: relative;
+	display: grid;
+	grid-template-columns: 50% 40%;
+	text-align: left;
+	align-items: center;
+	padding: 25px 45px 50px;
+}
+.desc-3 {
+	padding-left: 80px;
+	padding-right: 20px;
+}
+
+.faq {
+	text-align: center;
+	border-top: 8px rgba(69, 69, 69) solid;
+	border-bottom: 8px rgba(69, 69, 69) solid;
+}
+.faq h1 {
+	padding-bottom: 40px;
+	font-size: 3rem;
+	margin-top: 1em;
+}
+.questions {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 40%;
+	align-items: center;
+}
+.questions li {
+	padding: 20px 30px;
+	margin: 5px;
+	font-size: 1.6rem;
+	background-color: #303030;
+	color: white;
+	text-align: left;
+	width: 50%;
+}
+.faq p {
+	padding-top: 60px;
+	font-size: 1.2rem;
+	font-weight: 200;
+}
+.input {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 4.5em;
+}
+.input input {
+	width: 600px;
+	height: 3rem;
+}
+.input button {
+	height: 3.25rem;
+	width: 320px;
+	left: 20px;
+	text-align: center;
+	background: #e50914;
+	font-size: 1.5rem;
+	padding: 15px 32px;
+	border: none;
+	border-radius: 2px;
+	color: white;
+}
+.footer {
+	max-width: 70%;
+	margin: 1rem auto;
+	overflow: auto;
+}
+.footer,
+.footer a {
+	color: #999999;
+	font-size: 0.9rem;
+}
+.footer p {
+	margin-bottom: 1.5rem;
+}
+.footer .footer-cols {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 2rem;
+}
+.footer li {
+	line-height: 2;
+}
